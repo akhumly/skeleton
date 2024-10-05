@@ -1,0 +1,24 @@
+  {
+    "name": "NestJS Dev Container",
+    "dockerComposeFile": "../docker-compose.yml",  // Reference the compose file in the parent directory
+    "service": "app",   // Specifies the service to use as the dev container
+    "workspaceFolder": "/usr/src/app",  // Matches the WORKDIR in Dockerfile
+   "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.copilot",          // GitHub Copilot extension
+                "rangav.vscode-thunder-client", // Thunder Client extension
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "prisma.prisma",
+                "ms-vscode.vscode-typescript-next"
+            ]
+        }
+    },
+    "forwardPorts": [3000],
+    "postCreateCommand": "npm install",  // Install any missing dependencies post-creation
+    "remoteEnv": {
+      "DATABASE_URL": "postgres://user:password@db:5432/my_database"
+    }
+  }
+  
