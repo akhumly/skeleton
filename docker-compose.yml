@@ -11,7 +11,9 @@ services:
       - db-data:/var/lib/postgresql/data
 
   app:
-    build: .  # This tells Docker Compose to use the Dockerfile in the root directory
+    build:
+      context: .           # Ensure Docker has access to the entire project directory
+      dockerfile: .devcontainer/Dockerfile  # Specify the location of the Dockerfile
     ports:
       - "3000:3000"
     depends_on:

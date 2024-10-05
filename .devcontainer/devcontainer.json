@@ -6,12 +6,13 @@
    "customizations": {
         "vscode": {
             "extensions": [
-                "github.copilot",          // GitHub Copilot extension
-                "rangav.vscode-thunder-client", // Thunder Client extension
-                "esbenp.prettier-vscode",
-                "dbaeumer.vscode-eslint",
-                "prisma.prisma",
-                "ms-vscode.vscode-typescript-next"
+              "github.copilot",
+              "rangav.vscode-thunder-client",
+              "esbenp.prettier-vscode",
+              "dbaeumer.vscode-eslint",
+              "prisma.prisma",
+              "ms-vscode.vscode-typescript-next",
+              "ms-azuretools.vscode-docker"
             ]
         }
     },
